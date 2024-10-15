@@ -1,8 +1,11 @@
-import data from "./services/data";
+// import data from "./services/data/menu.json";
 
 window._app = "hel";
 // _app.menuData = {};
 
-window.addEventListener("DOMContentLoaded", () => {
-  // _app.menuData = data.fetchData();
+const $$ = function(args){ return document.querySelectorAll(args);}
+
+document.addEventListener("DOMContentLoaded", () => {
+  console.log("hi");
+  console.log($$("template"));
 });
