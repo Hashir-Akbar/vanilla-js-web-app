@@ -1,11 +1,15 @@
-// import data from "./services/data/menu.json";
+import API, { MenuLoad } from "./services/API.js";
+import Router from "./services/Router.js";
+import Store from "./services/Store.js";
 
-window._app = "hel";
-// _app.menuData = {};
+window._app = {};
+_app.store = Store;
 
-const $$ = function(args){ return document.querySelectorAll(args);}
 
-document.addEventListener("DOMContentLoaded", () => {
+
+document.addEventListener("DOMContentLoaded", async () => {
+  MenuLoad();
+  Router.init()
   console.log("hi");
-  console.log($$("template"));
+  
 });
