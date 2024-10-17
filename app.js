@@ -5,11 +5,8 @@ import Store from "./services/Store.js";
 window._app = {};
 _app.store = Store;
 
-
-
 document.addEventListener("DOMContentLoaded", async () => {
   MenuLoad();
-  Router.init()
+  Router.init();
   console.log("hi");
-  
 });
