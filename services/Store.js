@@ -4,3 +4,13 @@ const Store = {
 };
 
 export default Store;
+
+class MyElement extends HTMLCollection {
+  constructor() {
+    super();
+  }
+
+  connectedCallback = () => {}
+  disconnectedCallback = () => {}
+  
+}

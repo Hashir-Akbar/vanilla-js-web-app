@@ -13,6 +13,7 @@ const Router = {
     window.addEventListener("popstate", (e) => {
       Router.go(e.state.route, false);
     });
+    
     Router.go(location.pathname);
   },
 
