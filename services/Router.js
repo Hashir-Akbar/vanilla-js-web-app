@@ -13,7 +13,7 @@ const Router = {
     window.addEventListener("popstate", (e) => {
       Router.go(e.state.route, false);
     });
-    
+
     Router.go(location.pathname);
   },
 
@@ -22,16 +22,19 @@ const Router = {
       history.pushState({ route }, null, route);
     }
 
-
     let element = null;
     switch (route) {
       case "/":
-        element = document.createElement("h1");
-        element.textContent = "Home Page";
+        element = document.createElement("menu-page");
+
         break;
       case "/order":
-        element = document.createElement("h1");
+        element = document.createElement("order-page");
         element.textContent = "Order Page";
+        break;
+
+      default:
+        
         break;
     }
     const main = document.querySelector("main");
