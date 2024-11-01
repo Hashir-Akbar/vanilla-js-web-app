@@ -35,6 +35,7 @@ const Router = {
 
       default:
         element = document.createElement("details-page")
+        element.textContent = "Details-Page"
         break;
     }
     const main = document.querySelector("main");
